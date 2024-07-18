@@ -1,0 +1,159 @@
+footer{
+    bottom:0;
+    position: absolute;
+    width: 100%;
+    background : linear-gradient(to right,#000939,#242624);
+    padding: 100px 0 10px;
+    border-top-left-radius: 125px;
+    color: #fff;
+}
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.row .col{
+    flex-basis: 25%;
+    width: 8px;
+}
+.col h4{
+    width: fit-content;
+    position:relative;
+    margin-bottom: 30px;
+    border-bottom: solid 0.1px wheat;
+}
+.col p{
+    font-size: 12px;
+    text-align: center;
+}
+.col-1 {
+    margin-bottom: 70px;
+    position: relative;
+}
+.col-2 a{
+    font-size: 12px;
+}
+.col-2 a{
+    padding: 10px 0;
+    font-size: 12px;
+    text-decoration: underline ;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.col-3 ul li{
+    list-style: none;
+    text-decoration:none;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.col-3 ul li a{
+    text-decoration:none;
+    color: white;
+    text-align: center;
+}
+.col :nth-child(1),.col :nth-child(3){
+    flex-basis: 15%;
+}
+
+/* Social Icons */
+.social-icons{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icons a{
+    color: #fff;
+    transition: ease 0.1;
+    padding: 7px 10px;
+    border:solid 0.1px white;
+    border-radius: 50%;
+    background-color: #000939;
+}
+.social-icons .fa-brands{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+/* col*/
+.col form {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    border-bottom: 0.1px solid white;
+}
+.col-4 form input{
+    outline: none;
+    border: none;
+    color: #fff;
+    background: transparent;
+    width: 80%;
+}
+.col-4 form input::placeholder{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.arrow{
+    outline: none;
+    border: 0;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+.fa-envelope{
+    margin-right: 0px;
+    font-size: 15px;
+}
+/* Footer Line  */
+.footer-l{
+    width: 80%;
+    border: 0;
+    margin-bottom: 20px ;
+    border-bottom: 0.1px solid #ccc;
+    color: rgba(255, 255, 255, 0.274);
+}
+.footer-p{
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    font-weight: 300;
+}
+/* Responsive */
+@media ( max-width : 700px) {
+    footer{
+        bottom: unset;
+    }
+    .row .col{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+}
+/* Hover Section */
+.arrow:hover{
+    transform:translateX(10px);
+
+}
+.fa-brands:hover{
+    background-color: #fff;
+    color: #000939;
+}
+ .social-icons a:hover{
+    background-color: #fff;
+    color: #000939;
+    animation: forwards;
+}
